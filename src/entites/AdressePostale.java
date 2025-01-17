@@ -13,7 +13,8 @@ public class AdressePostale {
         this.ville = ville;
     }
 
-    public void afficheAdresse() {
-        System.out.println(numeroRue + " " + libelleRue + " " + codePostal + " " + ville);
+    @Override
+    public String toString() {
+        return numeroRue + " " + libelleRue + " " + codePostal + " " + ville;
     }
 }
